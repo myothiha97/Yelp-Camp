@@ -1,0 +1,30 @@
+<% layout('layouts/general-plate') %> 
+
+
+<div class="create-camp d-flex flex-column" id="camp">
+    <h2>Add Campground</h2>
+    <form class="c-camp-form shadow" action="/campground" method="POST">
+        <div  class="c-item-div">
+            <label for="title">Title</label>
+            <input class="camp-items form-control" type="text" name="title">
+        </div>
+        <div  class="c-item-div">
+            <label for="image">ImageUrl</label>
+            <input class="camp-items form-control" type="text" name="image">
+        </div>
+        <div  class="c-item-div">
+            <label for="price">Price</label>
+            <input class="camp-items form-control" type="text" name="price">
+        </div>
+        <div  class="c-item-div">
+            <label for="description">Description</label>
+            <input class="camp-items form-control" type="text" name="description">
+        </div>
+        <div  class="c-item-div">
+            <label for="location">Location</label>
+            <input class="camp-items form-control" type="text" name="location">
+        </div>
+        <!-- <input type="submit" name="submit"> -->
+        <button class="btn btn-danger">Submit</button>
+    </form>
+</div>

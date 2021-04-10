@@ -1,0 +1,11 @@
+<% layout('layouts/general-plate') %> 
+<div class="container d-flex flex-column justify-content-center align-items-center">
+    <h1><%= campgd.title %></h1>
+    <h2><%= campgd.location %></h2>
+    <img src="<%= campgd.image %> " alt="img" class="show-img">
+    <div class="show-desc">
+        <p>Description</p>
+        <p><%= campgd.description %></p>
+    </div>
+    <a href="/campground"><button class="btn btn-dark">Back</button></a>
+</div>
